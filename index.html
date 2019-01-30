@@ -1,0 +1,48 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <input type="file" id="files" name="files[]" />
+    <label>
+      Downscale
+      <input id="downscaleFactor" type="number" min="0" max="10" value="0" />
+    </label>
+    <label>
+      Invert
+      <input id="inversion" type="checkbox" />
+    </label>
+    <label>
+      Character Gradient
+      <input id="chars" value=" .:}$%#@" />
+    </label>
+    <label>
+      Gradient power
+      <input id="gradPow" value="1" />
+    </label>
+    <br/>
+
+    <em>Grayscale Algorithm:</em>
+
+    <label>
+      Average
+      <input type="radio" name="grayscaleFn" value="average" checked />
+    </label>
+    <label>
+      Lightness
+      <input type="radio" name="grayscaleFn" value="lightness" />
+    </label>
+    <label>
+      Luminosity
+      <input type="radio" name="grayscaleFn" value="luminosity" />
+    </label>
+
+
+    <hr/>
+
+    <pre id="out">
+      Select an image file to convert to text.
+    </pre>
+
+    <script src="index.js"></script>
+  </body>
+</html>
